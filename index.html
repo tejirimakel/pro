@@ -1,0 +1,623 @@
+<?php
+session_start();
+if(empty($_SESSION['user_id'])) {
+  header("Location: login.php");
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.css.map">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap-reboot.css.map">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap-grid.css.map">
+    <link rel="stylesheet" href="asset/venobox/venobox.css" media="screen">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flag-icon.css">
+    <link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css">
+    <link rel="icon" type="image/ico" href="">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark menubar">
+		<select class="btn btn-outline-light btn-sm">
+       <option>English</option>
+       <option>French</option>
+       <option>Spanish</option>
+    </select>
+		<div class="nav-icon mr-auto">
+			<span class="clock"><i class="fa fa-clock-o"></i>8:00am - 6:00pm</span>
+			<a href="tel:+2348168313336"><span class="phone"><i class="fa fa-phone"></i>+234-816813336</span></a>
+			<span class="ad"><i class="fa fa-map-marker"></i>No.3 Maitama Abuja FCT</span>
+
+		</div>
+		<div class="nav-socials ml-auto">
+			<a href="#"><span class="fb"><i class="fa fa-facebook"></i></span></a>
+			<a href="#"><span class="tw"><i class="fa fa-twitter"></i></span></a>
+			<a href="#"><span class="ig"><i class="fa fa-instagram"></i></span></a>
+		</div>
+	</nav>
+	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <a class="navbar-brand" href="index.html">TM DESIGNS</a>
+  <img src="">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--slider-->
+  <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slider1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block cap">
+          <h1>Web Design & Development</h1>
+          <p>We Create a functional and simple running website for your everyday need.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block cap">
+          <h1>Graphics Design</h1>
+          <p>We just dont design we create brands.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/slider3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block cap">
+          <h1>Printing</h1>
+          <p>Get the very best quality prints for your brand.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<div id="services" class="services text-center fix">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">	
+<div class="section-headline text-center">
+	<h1>Our Services</h1>
+</div>
+</div>
+</div>
+<div class="services-contents">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-12">
+              	<div class="service-item">
+                  <a class="services-icon" href="#">
+					<i class="fa fa-code"></i>
+					</a>
+                  <h4>Expert Coder</h4>
+                  <p>
+                    will have to make sure the prototype looks finished by inserting text or photo make sure the prototype looks finished by expert coders
+                  </p>
+                </div>
+            </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          	<div class="service-item">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-camera-retro"></i>
+										</a>
+                  <h4>Graphics Designer</h4>
+                  <p>
+                    we will have to make sure the prototype looks finished by inserting text or photo to make sure the prototype looks finished by our creative minds.
+                  </p>
+                </div>
+            </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          	<div class="service-item">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-wordpress"></i>
+										</a>
+                  <h4>Wordpress Developer</h4>
+                  <p>
+                    we will have to make sure the prototype looks finished by inserting text or photo to make sure the prototype looks finished by employing our wordpress developers
+                  </p>
+                </div>
+            </div>
+        </div>
+           <div class="row"> 
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          	<div class="service-item">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-print"></i>
+										</a>
+                  <h4>Printing</h4>
+                  <p>
+                    we will have to make sure the prototype looks finished by giving you a quality print with our machines
+                  </p>
+                </div>
+              </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          	<div class="service-item">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-bar-chart"></i>
+										</a>
+                  <h4>SEO Expert</h4>
+                  <p>
+                    we will have to make sure the prototype looks finished by working on the search engine optimization
+                  </p>
+          </div>
+      </div>
+          
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          	<div class="service-item">
+                  <a class="services-icon" href="#">
+											<i class="fa fa-comments-o"></i>
+										</a>
+                  <h4>24/7 Support</h4>
+                  <p>
+                    we will always give you a 24/7 chat support
+                  </p>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Start portfolio Area -->
+  <div id="portfolio" class="portfolio fix">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h1>Our Portfolio</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="portfolio-tab fix">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <ul class="nav nav-pills nav-fill flex-column flex-sm-row nav-menu">
+                <li class="nav-item">
+                  <div class="nav-link active" onclick="filterSelection('all')">All</div>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link" onclick="filterSelection('lb')">Logos & Branding</div>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link" onclick="filterSelection('id')">illustrations & Designs</div>
+                </li>
+                <li class="nav-item">
+                  <div class="nav-link" onclick="filterSelection('wb')">Web Designs</div>
+                </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+        <div class="p-content fix">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+          	<div class="single-p-project">
+              <div class="p-img filter wb">
+                <a href="#"><img class="img-fluid" src="img/portfolio/1.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/1.jpg">
+                      <h4>Research Institute</h4>
+                      <span>Web Development</span>
+                    </a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-p-project">
+              <div class="p-img filter id">
+                <a href="#"><img class="img-fluid" src="img/portfolio/2.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/2.jpg">
+                      <h4>Blue Sea</h4>
+                      <span>Photoshop</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-p-project">
+              <div class="p-img filter lb id">
+                <a href="#"><img class="img-fluid" src="img/portfolio/3.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/3.jpg">
+                      <h4>Honey Nature</h4>
+                      <span>logo</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-p-project">
+              <div class="p-img filter wb id">
+                <a href="#"><img class="img-fluid" src="img/portfolio/4.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/4.jpg">
+                      <h4>Creative Team</h4>
+                      <span>Web design</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-p-project">
+              <div class="p-img filter wb id">
+                <a href="#"><img class="img-fluid" src="img/portfolio/5.jpg" alt="" /></a>
+                <div class="add-actions text-center text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/5.jpg">
+                      <h4>Beautiful Flower</h4>
+                      <span>Web Development</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="single-p-project">
+              <div class="p-img  filter id">
+                <a href="#"><img class="img-fluid" src="img/portfolio/6.jpg" alt="" /></a>
+                <div class="add-actions text-center">
+                  <div class="project-dec">
+                    <a class="venobox" data-gall="myGallery" href="img/portfolio/6.jpg">
+                      <h4>Night Hill</h4>
+                      <span>Photoshop</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-area text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h1>Pricing Table</h1>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-content">
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="pri_table_list card text-white bg-dark">
+            <h3 class="card-header">Graphics Design</h3>
+            <ul class="card-text">
+              <li class="check">Online system</li>
+              <li class="check cross">Full access</li>
+              <li class="check">Free apps</li>
+              <li class="check">Multiple slider</li>
+              <li class="check cross">Free domain</li>
+              <li class="check cross">Support unlimited</li>
+              <li class="check">Payment online</li>
+              <li class="check cross">Cash back</li>
+            </ul>
+            <button class="btn btn-primary card-btn">Enquire</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="pri_table_list card text-white bg-dark active">
+            <h3 class="card-header">Web Design</h3>
+            <ul class="card-text">
+              <li class="check">Online system</li>
+              <li class="check">Full access</li>
+              <li class="check">Free apps</li>
+              <li class="check">Multiple slider</li>
+              <li class="check cross">Free domain</li>
+              <li class="check">Support unlimited</li>
+              <li class="check">Payment online</li>
+              <li class="check cross">Cash back</li>
+            </ul>
+            <button class="btn btn-primary card-btn">Enquire</button>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="pri_table_list card text-white bg-dark">
+            <h3 class="card-header">Printing</h3>
+            <ul class="card-text">
+              <li class="check">Online system</li>
+              <li class="check">Full access</li>
+              <li class="check">Free apps</li>
+              <li class="check">Multiple slider</li>
+              <li class="check">Free domain</li>
+              <li class="check">Support unlimited</li>
+              <li class="check">Payment online</li>
+              <li class="check">Cash back</li>
+            </ul>
+            <button class="btn btn-primary card-btn">Enquire</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- End pricing table area -->
+  <div id="contact" class="contact-area">
+    <div class="contact-inner area-padding">
+      <div class="contact-overly"></div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="section-headline text-center">
+              <h1>Contact us</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-mobile"></i>
+                <p>
+                  Call: +234-8168313336<br>
+                  <span>Monday-Saturday (8am-6pm)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-envelope-o"></i>
+                <p>
+                  Email: support@tmdesigns.com<br>
+                  <span>Web: www.tmdesigns.com</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Start contact icon column -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="contact-icon text-center">
+              <div class="single-icon">
+                <i class="fa fa-map-marker"></i>
+                <p>
+                  Location: No.31 Adam Street<br>
+                  <span>Maitama Abuja FCT</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <!-- Start Google Map -->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <!-- Start Map -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63037.35819401629!2d7.452383397035563!3d9.078802132438756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a50b73e1be1%3A0x7ed3ba71b9b043c3!2sWuse%2C%20Abuja!5e0!3m2!1sen!2sng!4v1572571663239!5m2!1sen!2sng" width="545" height="380" frameborder="1" style="border:0;" allowfullscreen=""></iframe>
+            <!-- End Map -->
+          </div>
+          <!-- End Google Map -->
+
+          <!-- Start  contact -->
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="form contact-form">
+              <div id="sendmessage" class="alert alert-success" role="alert">Your message has been sent. Thank you!</div>
+              <div id="errormessage" class="alert alert-danger" role="alert">Your message didnt deliver. Please retry!</div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter your name" />
+                  <div class="alert alert-warning" role="alert"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class=" alert alert-warning" role="alert"></div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class=" alert alert-warning" role="alert"></div>
+
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us. Thank You &#128521" placeholder="Message"></textarea>
+                  <div class=" alert alert-warning" role="alert"></div>
+                </div>
+                <div class="text-center"><button class="btn btn-primary" type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+          <!-- End Left contact -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Contact Area -->
+
+  <!-- Start Footer bottom Area -->
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <div class="footer-logo">
+                  <h2><span>TM</span>Designs</h2>
+                </div>
+
+                <p>TM Designs Inc.</p>
+                <div class="footer-icons">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>information</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+                <div class="footer-contacts">
+                  <p><span>Tel:</span> +234 456 789</p>
+                  <p><span>Email:</span> support@tmdesigns.com</p>
+                  <p><span>Working Hours:</span> 8am-6pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end single footer -->
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="footer-content">
+              <div class="footer-head">
+                <h4>Instagram Feed</h4>
+                <div class="flicker-img">
+                  <a href="#"><img class="img-fluid" src="img/portfolio/1.jpg" alt=""></a>
+                  <a href="#"><img class="img-fluid" src="img/portfolio/2.jpg" alt=""></a>
+                  <a href="#"><img class="img-fluid"src="img/portfolio/3.jpg" alt=""></a>
+                  <a href="#"><img class="img-fluid" src="img/portfolio/4.jpg" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-area-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="copyright text-center">
+              <p>
+                &copy; Copyright <strong>Tm Designs Inc.</strong>All Rights Reserved 2019.
+              </p>
+            </div>
+            <div class="credits">
+              Designed by <a href="#">Tm Designs Inc.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+      
+  <a href="#" class="back-to-top" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
+
+  
+ 
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="asset/bootstrap/js/bootstrap.js"></script>
+    <script src="asset/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js.map"></script>
+    <script src="asset/venobox/venobox.min.js"></script>
+    <script src="js/contactform.js"></script>
+<script>
+    $(document).ready(function(){
+    $('.venobox').venobox(); 
+});
+</script>
+<script>
+	filterSelection('all')
+	function filterSelection(c){
+		var x, i;
+		x =
+		document.getElementByClassName('filter');
+		if (c == "all") c = "";
+		for (i = 0; i < x.length; i++){
+			removeClass(x[i], "show");
+			if (x[i].className.indexOf(c)> -1)
+				addClass(x[i], "show");}
+		}
+		function addClass(element, name){
+			var i, arr1, arr2;
+			arr1 = element.className.split("");
+			arr2 = name.split("");
+			for (var i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1){
+					element.className += "" + arr2[i];
+			}
+		}
+	}
+
+	function removeClass(element, name){
+		var i, arr1, arr2;
+		arr1 = element.className.split("");
+		arr2 = name.split("");
+		for (var i = 0; i < arr2.length; i++) {
+			while (arr1.indexOf(arr2[i])> -1);{
+				arr1.splice(arr1.indexOf(arr2[i]),1);
+			}
+		}
+		element.className = arr1.join("");
+	}
+
+var navmenu = document.getElementByClassName("nav-menu");
+var navlink = navmenu.getElementByClassName("nav-link");
+for (var i = 0; i < navlink.length; i++) {
+	navlink[i].addEventListener("click",function(){
+		var current = document.getElementByClassName("active");
+		current[0].className = current[0].className.replace("active","");
+		this.className += " active";
+	});
+}
+
+</script>
+   
+</body>
+</html>	
