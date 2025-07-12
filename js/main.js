@@ -35,11 +35,9 @@ window.addEventListener("scroll", () => {
     navbar.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
     navbar.style.boxShadow = "var(--shadow)";
     navbar.style.transition = "background-color 0.8s ease, box-shadow 0.8s ease";
-    sBtn.style.display = "block";
   } else {
     navbar.style.backgroundColor = "transparent";
     navbar.style.boxShadow = "none";
-    sBtn.style.display = "none";
   }
 });
 
@@ -58,6 +56,16 @@ window.addEventListener("scroll", () => {
       box.style.marginTop = "0";
     });
   }
+});
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+        sBtn.style.display = "block";
+      
+    }
+    else {
+        sBtn.style.display = "none";
+    }
 });
 
 function filterSelection(category) {
