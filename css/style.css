@@ -493,7 +493,11 @@ max-width: 400px;
     gap: 2rem;
   }
   .hero-content {
-    margin: 58% 0;
+    margin: 38% 0;
+  }
+
+  .hero-content h1 {
+    line-height: 1;
   }
   .service-box {
   margin: 2rem 0;
