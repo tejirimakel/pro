@@ -256,7 +256,7 @@ max-width: 400px;
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
   gap: 2rem;
   margin:3rem 0;
 }
@@ -476,8 +476,17 @@ max-width: 400px;
   }
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 2rem;
+  }
+  .contact-grid {
+    gap: 2rem;
+    padding: 0;
+  }
+  .service-box{
+    margin: -4rem 0;
+    max-width: 100%;
+    padding: 1.5rem;
   }
 }
 
@@ -500,7 +509,7 @@ max-width: 400px;
     line-height: 1;
   }
   .service-box {
-  margin: 3rem 0;
+  margin: 1rem 0;
   max-width: 100%;
   padding: 1.5rem;
   }
@@ -545,6 +554,12 @@ max-width: 400px;
   .portfolio-section {
     padding: 1rem 8rem;
     margin: 2rem 0;
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(260px, 1fr));
+    gap: 2rem;
+    margin:3rem 0;
   }
 }
 
