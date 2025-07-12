@@ -424,7 +424,7 @@ max-width: 400px;
   border-radius: var(--radius);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .nav-links {
     display: none;
   }
